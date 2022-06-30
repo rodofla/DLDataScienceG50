@@ -1,5 +1,5 @@
 # importa librería math
-import math
+from math import ceil
 
 
 # Solicitud de Inputs
