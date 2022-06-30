@@ -1,5 +1,5 @@
 # importa librería math
-from math import ceil
+from math import ceil 
 
 
 # Solicitud de Inputs
@@ -9,7 +9,7 @@ grasa = float(input("Ingrese la cantidad de grasa:\n> "))
 
 
 # cálculo de calorías
-calorias = math.ceil(4 * proteina + 4 * carbohidratos + 9 * grasa)
+calorias = ceil(4 * proteina + 4 * carbohidratos + 9 * grasa)
 
 
 # entregar output en el formato solicitado  
