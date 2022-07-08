@@ -1,4 +1,5 @@
-from sys import argv # importa el módulo argv
+from sys import argv # Importamos la librería argv
+from xmlrpc.client import boolean   # importa el módulo argv
 
 
 # variables que reciben los argumentos
@@ -21,3 +22,4 @@ Los {clp} equivalen a:
 
 
 """)
+
