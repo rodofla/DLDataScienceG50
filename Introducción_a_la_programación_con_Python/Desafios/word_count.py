@@ -1,4 +1,4 @@
-from encodings import utf_8
+# from encodings import utf_8
 from sys import argv # Importamos la librería argv para agregar los argumentos por línea de comandos
 
 # variables que reciben los argumentos

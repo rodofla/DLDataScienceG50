@@ -1,5 +1,4 @@
 from sys import argv # Importamos la librería argv
-from xmlrpc.client import boolean   # importa el módulo argv
 
 
 # variables que reciben los argumentos por línea de comandos
