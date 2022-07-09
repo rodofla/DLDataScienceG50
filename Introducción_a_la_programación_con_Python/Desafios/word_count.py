@@ -1,3 +1,4 @@
+from encodings import utf_8
 from sys import argv # Importamos la librería argv para agregar los argumentos por línea de comandos
 
 # variables que reciben los argumentos
@@ -31,5 +32,3 @@ print(f"""
 
 print(f"El número de caracteres distintos es: {char_count_distinct()}")
 print (f"El número de palabras distintas es: {word_count_distinct()}")
-
-

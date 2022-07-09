@@ -38,8 +38,6 @@ menu()
 
 # Inputs validando que sean números decimales.
 while True:
-    #clear()
-    #menu()
     try:
         c_gravitacional = float(input("¿Cúal es el valor de la constate gravitacional?\n >> "))  
     except ValueError:
@@ -54,8 +52,6 @@ while True:
     
 
 while True:
-    #clear()
-    #menu()
     try:
         radio = int(input("¿Cúal es el radio del planeta Tierra?\n >> "))*1000
     except ValueError:
