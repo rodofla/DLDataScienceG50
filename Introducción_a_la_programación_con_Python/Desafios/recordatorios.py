@@ -1,11 +1,12 @@
 
+#lista entregada para desarrollara el ejercicio, se asume que hay que trabajar dentro de este mismo archivo por las
+# instrucciones del ejercicio.
 recordatorios = [['2021-01-01', "11:00", "Levantarse y ejercitar"],
  ['2021-05-01', "15:00", "No trabajar"],
  ['2021-07-15', "13:00", "No hacer nada es feriado"],
  ['2021-09-18', "16:00", "Ramadas"],
  ['2021-12-25', "00:00", "Navidad"]]
 
-# Output
 
 """ 
 1. Agregue un evento el 2 de Febrero de 2021 a las 6 de la mañana para
