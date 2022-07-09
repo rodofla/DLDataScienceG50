@@ -14,7 +14,6 @@ recordatorios = [['2021-01-01', "11:00", "Levantarse y ejercitar"],
 """
 
 recordatorios.insert(1,['2021-02-02', "06:00", "Empezar el Año"])
-
 """
 Al revisar los eventos, nota un error, ya que el 15 de Julio no es feriado. Editar
 de tal manera que sea el 16 de Julio.
@@ -22,7 +21,6 @@ de tal manera que sea el 16 de Julio.
 """
 
 recordatorios[3][0] = '2021-07-16'
-print('\n'.join(map(str, recordatorios)))
 """
 Lamentablemente le tocará trabajar el día del trabajo. Elimine el evento del
 día del trabajo.
@@ -37,3 +35,7 @@ las 22 hrs.
 recordatorios.insert(4,['2021-12-25', "22:00", "Cena de Navidad"])
 recordatorios.append(['2022-01-01', "22:00", "Cena de año Nuevo"])
 
+"""
+imprimimos el outputs de todos los cambios realizados
+"""
+print('\n'.join(map(str, recordatorios)))
