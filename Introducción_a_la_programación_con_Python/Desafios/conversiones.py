@@ -12,11 +12,10 @@ sol_clp =  sol * clp
 arg_clp =  arg * clp
 usd_clp =  usd * clp
 
-# imprime el resultado de la conversión
+#imprime el resultado de la conversión
 print(f"""
 Los {clp} equivalen a:
 {sol_clp:.1f} Soles
 {arg_clp:.1f} Pesos Argentinos
 {usd_clp:.1f} Dolares
 """)
-
