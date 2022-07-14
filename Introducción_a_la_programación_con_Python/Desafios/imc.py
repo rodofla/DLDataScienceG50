@@ -1,3 +1,4 @@
+# menú de la calculadora de IMC.
 print("""    Bienvenido a la calculadora de IMC
 escriba su peso en kg y su altura en metros\n""")
 
