@@ -1,20 +1,35 @@
 from math import prod #import the function prod
 
-#a function who calculate the factoriel of a number
+
 def fact(n):
+    """
+    "If n is 0, return 1, otherwise return n times the factorial of n-1."
+    
+    The factorial of a number is the product of all the integers from 1 to that number. For example, the
+    factorial of 5 is 5*4*3*2*1, which equals 120
+    
+    :param n: The number to calculate the factorial of
+    :return: The factorial of n.
+    """
     if n == 0:
         return 1
     else:
         return n * fact(n-1)
 
-#a function who calculate the the producer of a list of numbers
+
 def productoria(lista):
+    """
+    If the list is empty, return 1. Otherwise, return the product of the list.
+    
+    :param lista: a list of numbers
+    :return: The product of the elements in the list.
+    """
     if len(lista) == 0:
         return 1
     else:
         return prod(lista)
     
-#a menu who ask the user to choose a number and a list of numbers
+
 def menu():
     print("""
     ¡¡¡¡Bienvenido!!!
