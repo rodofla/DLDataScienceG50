@@ -1,15 +1,20 @@
 import preguntas as p
 
 def print_pregunta(enunciado, alternativas):
+    """
+    > The function `print_pregunta` takes two arguments, `enunciado` and `alternativas`, and prints the
+    first element of each
     
+    :param enunciado: the question
+    :param alternativas: a list of 4 strings, each one being an alternative
+    """
+    alternativas.reverse()
     # Imprimir enunciado y alternativas
-    print(f"{enunciado}\n")
-    index ="A.", "B.", "C.", "D."
-    for i, alt in enumerate(alternativas):
-        print(f"{index[i]}{alt[0]}")
-    
-    
-    
+    print(enunciado[0])
+    print('\n')
+    orden = ['A. ','B. ','C. ','D. ']
+    for i in range(len(alternativas)):
+        print(orden[i] + alternativas[i][0])
     
     ###############################################################
         

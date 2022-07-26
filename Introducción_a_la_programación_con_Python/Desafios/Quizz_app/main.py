@@ -29,11 +29,11 @@ opcion = input('''Ingrese una opción para Jugar!
         
     > ''')
 # 1. validar opcion
-opcion = validate(['1','0'], opcion)
+opcion = validate(['0','1'],opcion)
 
 # 2. Definir el comportamiento de Salir
 if opcion == '0':
-    print("Nos vemos pronto!")
+    print('Nos vemos pronto!')
     time.sleep(2)
     os.system(op_sys)
     # finalizar programa
@@ -45,31 +45,30 @@ while correcto and n_pregunta < 3*p_level:
     if n_pregunta == 0:
         p_level = input('¿Cuántas preguntas por nivel? (Máximo 3): ')
         # 3. Validar el número de preguntas por nivel
-        p_level = validate(['1','2','3'], p_level)
+        p_level = int(validate(['1','2','3'],p_level))
         
     if continuar == 'y':
         #contador de preguntas
         n_pregunta += 1
         # 4. Escoger el nivel de la pregunta
-        nivel = choose_level(n_pregunta, p_level)
+        nivel = choose_level(n_pregunta,int(p_level))
         print(f'Pregunta {n_pregunta}:')
         # 5. Escoger el enunciado y las alternativas de una pregunta según el nivel escogido
         enunciado, alternativas = choose_q(nivel)
         #6. Imprimir el enunciado y sus alternativas en pantalla
         print_pregunta(enunciado, alternativas)
         
-        
         respuesta = input('Escoja la alternativa correcta:\n> ').lower()
         # 7. Validar la respuesta entregada
-        respuesta = validate(['a','b','c','d'], respuesta)
+        respuesta = validate(['a','b','c','d'],respuesta)
         # 8. Verificar si la respuesta es correcta o no
-        correcto = verificar(alternativas, respuesta)
+        correcto = verificar(alternativas,respuesta)
         
         if correcto and n_pregunta < 3*p_level:
             print('Muy bien sigue así!')
             continuar = input('Desea continuar? [y/n]: ').lower()
             #9. Validar si es que se responde y o n
-            continuar = validate(['y','n'], continuar)
+            continuar = validate(['y','n'],continuar)
             os.system(op_sys)
         elif correcto and n_pregunta == 3*p_level:
             print(f'Felicitaciones, Has respondido {3*p_level} preguntas correctas. \n Has ganado la Trivia \n Gracias por Jugar, hasta luego!!!')
@@ -83,5 +82,4 @@ while correcto and n_pregunta < 3*p_level:
         print('Nos vemos la proxima vez, sigue practicando')
         time.sleep(3)
         exit()
-            
             

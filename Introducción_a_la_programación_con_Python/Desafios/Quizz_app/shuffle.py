@@ -3,7 +3,7 @@ import random
 
 def shuffle_alt(pregunta):
     #mezclar alternativas
-    random.shuffle(pregunta)
+    random.shuffle(pregunta['alternativas'])
 
     #######################################################################
     
